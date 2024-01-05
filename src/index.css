@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "IRanSans";
+    src: url("./assets/fonts/FontsFree-Net-ir_sans.ttf");
+}
+@font-face {
+    font-family: "B Mehr";
+    src: url("./assets/fonts/B\ MEHR\ BOLD-.TTF");
+}
+@font-face {
+    font-family: "IRDast Nevis";
+    src: url("./assets/fonts/IRDASTNEVIS-.TTF");
+}
