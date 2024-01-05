@@ -3,14 +3,37 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "IRanSans";
-    src: url("./assets/fonts/FontsFree-Net-ir_sans.ttf");
+  font-family: "IRanSans";
+  src: url("./assets/fonts/FontsFree-Net-ir_sans.ttf");
 }
 @font-face {
-    font-family: "B Mehr";
-    src: url("./assets/fonts/B\ MEHR\ BOLD-.TTF");
+  font-family: "B Mehr";
+  src: url("./assets/fonts/B_MEHR-.TTF");
 }
 @font-face {
-    font-family: "IRDast Nevis";
-    src: url("./assets/fonts/IRDASTNEVIS-.TTF");
+  font-family: "IRDast Nevis";
+  src: url("./assets/fonts/IRDASTNEVIS-.TTF");
+}
+
+.ltr-div {
+  direction: ltr;
+}
+
+.rtl-div {
+  direction: rtl;
+}
+
+@layer base {
+  html {
+    @apply rtl-div;
+  }
+}
+
+@layer components {
+  .bg-image {
+    background-image: url("assets/images/bg2.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
 }
