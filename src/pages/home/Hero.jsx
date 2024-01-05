@@ -9,7 +9,7 @@ export default function Hero() {
         <div class="absolute top-0 h-full w-full">
           <div class="mt-44 md:mt-56 relative">
             <div
-              class="absolute w-full transition-all duration-700"
+              class="absolute hidden w-full transition-all duration-700"
             >
               <div
                 class="relative flex flex-col justify-center items-center w-full h-full text-center"
@@ -40,7 +40,7 @@ export default function Hero() {
             </div>
 
             <div
-              class="absolute hidden w-full transition-all duration-700"
+              class="absolute w-full transition-all duration-700"
             >
               <div
                 class="relative flex flex-col justify-center items-center w-full h-full text-center"
