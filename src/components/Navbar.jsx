@@ -1,12 +1,22 @@
 import React, { useState } from "react";
 import logo from "./../assets/svgs/logo.svg";
 import { NavLink } from "react-router-dom";
-import { FaFacebook, FaInstagram, FaWhatsapp, FaHouseChimney } from "react-icons/fa6";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaWhatsapp,
+  FaHouseChimney,
+  FaPalette,
+  FaReceipt,
+  FaCircleInfo,
+  FaPhoneVolume,
+} from "react-icons/fa6";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
+import { BsFillPersonBadgeFill } from "react-icons/bs";
 
 export default function Navbar() {
-  const [mobileNavShow, setMobileNavShow] = useState(true);
+  const [mobileNavShow, setMobileNavShow] = useState(false);
 
   return (
     <>
@@ -69,7 +79,7 @@ export default function Navbar() {
         </a>
       </div> */}
 
-        <div className="hidden lg:flex mr-auto items-center gap-4 text-slate-700">
+        <div className="hidden lg:flex mr-auto items-center gap-4 text-red-700/80">
           <a href="#">
             <FaFacebook className="text-3xl hover:text-red-700 transition-all duration-300 ease-in-out" />
           </a>
@@ -90,15 +100,22 @@ export default function Navbar() {
       </nav>
 
       <div
-      onClick={() => setMobileNavShow(false)}
-        className={`${mobileNavShow ? "" : "hidden"} fixed opacity-70 top-0 w-full h-full bg-slate-900 z-40 md:hidden`}
+        onClick={() => setMobileNavShow(false)}
+        className={`${
+          mobileNavShow ? "" : "hidden"
+        } fixed bg-opacity-50 backdrop-blur-sm top-0 w-full h-full bg-slate-900 z-40 md:hidden`}
       ></div>
 
       <div
-        className={`${mobileNavShow ? "" : "hidden"} fixed top-0 flex-col bg-white h-full w-[80%] rounded-l-lg z-50 animate-[pull_0.3s_ease-in] md:hidden`}
+        className={`${
+          mobileNavShow ? "" : "hidden"
+        } fixed top-0 flex-col bg-white h-full w-[80%] rounded-l-lg z-50 animate-[pull_0.3s_ease-in] md:hidden`}
       >
         <div className="bg-red-700 inline-block rounded-full p-0.5 mt-4 mr-4">
-          <IoClose onClick={() => setMobileNavShow(false)} className="text-2xl text-white"  />
+          <IoClose
+            onClick={() => setMobileNavShow(false)}
+            className="text-2xl text-white"
+          />
         </div>
         <div className="h-28 mt-6">
           <img src={logo} alt="Logo" className="h-full w-full object-contain" />
@@ -145,48 +162,44 @@ export default function Navbar() {
         </a>
       </div> */}
 
-        <div className="mx-8 text-white mt-8">
+        <div className="mx-8 text-red-700 mt-8">
           <ul>
-            <li className="flex justify-start items-center font-IRanSans px-2 py-1">
+            <li className="flex justify-start items-center font-IRanSans px-2 py-1.5">
               <NavLink to="/" className="flex gap-3">
-              <FaHouseChimney className="text-xl" />
+                <FaHouseChimney className="text-xl" />
                 <span>صفحه اصلی</span>
               </NavLink>
             </li>
 
-            <li className="flex justify-start items-center font-IRanSans px-2 py-1">
+            <li className="flex justify-start items-center font-IRanSans px-2 py-1.5">
               <NavLink to="/" className="inline-flex gap-3">
-              <FaHouseChimney className="text-xl" />
+                <FaPalette className="text-xl" />
                 <span>تابلوها</span>
               </NavLink>
             </li>
-            <li class="flex justify-start items-center font-IRanSans px-2 pt-1 pb-1 rounded-lg hover:bg-redColorShade">
-              <i class="fa-solid fa-basket-shopping text-xl ml-2"></i>
-              <a href="#" class="inline-block w-full">
-                {" "}
-                سفارش نقاشی{" "}
-              </a>
+            <li className="flex justify-start items-center font-IRanSans px-2 py-1.5">
+              <NavLink to="/" className="inline-flex gap-3">
+                <FaReceipt className="text-xl" />
+                <span>سفارش نقاشی</span>
+              </NavLink>
             </li>
-            <li class="flex justify-start items-center font-IRanSans px-2 pt-1 pb-1 rounded-lg hover:bg-redColorShade">
-              <i class="fa-solid fa-clipboard-user text-2xl ml-[10px] mr-[2px]"></i>
-              <a href="#" class="inline-block w-full">
-                {" "}
-                هنرمندان{" "}
-              </a>
+            <li className="flex justify-start items-center font-IRanSans px-2 py-1.5">
+              <NavLink to="/" className="inline-flex gap-3">
+                <BsFillPersonBadgeFill className="text-xl" />
+                <span>هنرمندان</span>
+              </NavLink>
             </li>
-            <li class="flex justify-start items-center font-IRanSans px-2 pt-1 pb-1 rounded-lg hover:bg-redColorShade">
-              <i class="fa-solid fa-map text-xl ml-2"></i>
-              <a href="#" class="inline-block w-full">
-                {" "}
-                درباره ما{" "}
-              </a>
+            <li className="flex justify-start items-center font-IRanSans px-2 py-1.5">
+              <NavLink to="/" className="inline-flex gap-3">
+                <FaCircleInfo className="text-xl" />
+                <span>درباره ما</span>
+              </NavLink>
             </li>
-            <li class="flex justify-start items-center font-IRanSans px-2 pt-1 pb-1 rounded-lg hover:bg-redColorShade">
-              <i class="fa-solid fa-phone-volume text-xl ml-2"></i>
-              <a href="#" class="inline-block w-full">
-                {" "}
-                تماس با ما{" "}
-              </a>
+            <li className="flex justify-start items-center font-IRanSans px-2 py-1.5">
+              <NavLink to="/" className="inline-flex gap-3">
+                <FaPhoneVolume className="text-xl" />
+                <span>تماس با ما</span>
+              </NavLink>
             </li>
           </ul>
         </div>
