@@ -6,7 +6,7 @@ export default function LinkButton({ text, link }) {
     <div>
       <NavLink
         to={link}
-        className="font-IRanSans text-lg bg-red-700 text-white px-6 py-3 border border-white rounded-sm md:px-12"
+        className="font-IRanSans bg-red-700 text-white px-6 py-3 border border-white rounded-sm md:px-12"
       >
         {text}
       </NavLink>
