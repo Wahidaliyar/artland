@@ -64,7 +64,7 @@ const data = [
 
 export default function Newest() {
   return (
-    <section className="text-center mt-20 md:mt-32">
+    <section className="text-center mt-20 md:mt-32 pb-10">
       <h2 className="inline-block text-3xl md:text-4xl font-mehr border-b-4 border-red-700">
         جدیدترین‌ها
       </h2>

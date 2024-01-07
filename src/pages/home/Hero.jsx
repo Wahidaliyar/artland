@@ -6,7 +6,7 @@ export default function Hero() {
     <section>
       <div className="relative h-screen w-full bg-image">
         <div className="w-full h-full bg-red-900/50"></div>
-        <div className="absolute top-0 h-full w-full">
+        <div className="absolute top-0 pt-10 h-full w-full">
           <div className="mt-44 md:mt-56 relative">
             <div
               className="absolute hidden w-full transition-all duration-700"
@@ -52,9 +52,9 @@ export default function Hero() {
                   <br className="md:hidden" />
                   <span>تابلوی</span>
                   <span
-                    className="before:block text-white before:absolute before:-right-1 md:before:-right-1 before:inset-2 before:-skew-x-12 before:bg-red-700 relative px-2"
+                    className="before:block text-white before:absolute before:-right-0.5 before:-left-0.5 before:top-2 before:bottom-1 before:inset-2 before:-skew-x-12 before:bg-red-700 relative px-2"
                   >
-                    <span className="relative">&nbsp;نقاشی&nbsp;</span>
+                    <span className="relative">&nbsp;نقاشی</span>
                   </span>
                 </h1>
                 <p className="font-dastnevis text-2xl md:text-3xl text-white my-6">

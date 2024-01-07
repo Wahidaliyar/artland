@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 w-full bg-red-100/10 border-b border-b-red-500/30 flex items-center justify-between md:justify-start h-16 px-4 md:h-[74px] z-30 md:px-[120px] bg-opacity-60 backdrop backdrop-blur-md">
+      <nav className="fixed top-0 w-full bg-red-700 flex items-center justify-between md:justify-start h-16 px-4 md:h-[74px] z-30 md:px-[120px] bg-opacity-85 backdrop backdrop-blur-md">
         <div className="w-16 h-16 md:w-20 md:h-20">
           <img src={logo} className="w-full h-full object-contain" alt="Logo" />
         </div>
@@ -28,37 +28,37 @@ export default function Navbar() {
         <div className="hidden md:flex gap-6 mr-14">
           <NavLink
             to="/"
-            className="font-IRanSans text-slate-800 hover:text-red-700 transition-all duration-300 ease-in-out"
+            className="font-IRanSans text-white hover:text-red-200 transition-all duration-300 ease-in-out"
           >
             صفحه اصلی
           </NavLink>
           <NavLink
-            to="/"
-            className="font-IRanSans text-slate-800 hover:text-red-700 transition-all duration-300 ease-in-out"
+            to="/products"
+            className="font-IRanSans text-white hover:text-red-200 transition-all duration-300 ease-in-out"
           >
             محصولات
           </NavLink>
           <NavLink
             href="./order.html"
-            className="font-IRanSans text-slate-800 hover:text-red-700 transition-all duration-300 ease-in-out"
+            className="font-IRanSans text-white hover:text-red-200 transition-all duration-300 ease-in-out"
           >
             سفارش نقاشی
           </NavLink>
           <NavLink
             to="/"
-            className="font-IRanSans text-slate-800 hover:text-red-700 transition-all duration-300 ease-in-out"
+            className="font-IRanSans text-white hover:text-red-200 transition-all duration-300 ease-in-out"
           >
             هنرمندان
           </NavLink>
           <NavLink
             to="/"
-            className="font-IRanSans text-slate-800 hover:text-red-700 transition-all duration-300 ease-in-out"
+            className="font-IRanSans text-white hover:text-red-200 transition-all duration-300 ease-in-out"
           >
             درباره ما
           </NavLink>
           <NavLink
             to="/"
-            className="font-IRanSans text-slate-800 hover:text-red-700 transition-all duration-300 ease-in-out"
+            className="font-IRanSans text-white hover:text-red-200 transition-all duration-300 ease-in-out"
           >
             تماس باما
           </NavLink>
@@ -79,7 +79,7 @@ export default function Navbar() {
         </a>
       </div> */}
 
-        <div className="hidden lg:flex mr-auto items-center gap-4 text-red-700">
+        <div className="hidden lg:flex mr-auto items-center gap-4 text-white">
           <a href="#">
             <FaFacebook className="text-3xl hover:text-red-600 transition-all duration-300 ease-in-out" />
           </a>
@@ -91,9 +91,9 @@ export default function Navbar() {
           </a>
         </div>
 
-        <div className="md:hidden bg-red-700 rounded-full p-1">
+        <div className="md:hidden bg-white rounded-full p-1">
           <HiMenuAlt4
-            className="text-2xl text-white"
+            className="text-2xl text-red-700"
             onClick={() => setMobileNavShow(true)}
           />
         </div>
@@ -103,13 +103,13 @@ export default function Navbar() {
         onClick={() => setMobileNavShow(false)}
         className={`${
           mobileNavShow ? "" : "hidden"
-        } fixed bg-opacity-50 backdrop-blur-sm top-0 w-full h-full bg-slate-900 z-40 md:hidden`}
+        } fixed bg-opacity-50 backdrop-blur-sm top-0 left-0 bottom-0 right-0 w-full h-full bg-slate-900 z-40 md:hidden`}
       ></div>
 
       <div
         className={`${
           mobileNavShow ? "" : "hidden"
-        } fixed top-0 flex-col bg-white h-full w-[80%] rounded-l-lg z-50 animate-[pull_0.3s_ease-in] md:hidden`}
+        } fixed top-0 bottom-0 flex-col bg-white h-full w-[75%] rounded-l-lg z-50 animate-[pull_0.3s_ease-in] md:hidden`}
       >
         <div className="bg-red-700 inline-block rounded-full p-0.5 mt-4 mr-4">
           <IoClose
@@ -162,42 +162,42 @@ export default function Navbar() {
         </a>
       </div> */}
 
-        <div className="mx-8 text-red-700 mt-8">
+        <div className="text-xl mx-8 text-red-700 mt-8">
           <ul>
-            <li className="flex justify-start items-center font-IRanSans px-2 py-1.5">
+            <li className="flex justify-start items-center font-IRanSans px-2 py-2">
               <NavLink to="/" className="flex gap-3">
-                <FaHouseChimney className="text-xl" />
+                <FaHouseChimney className="text-2xl" />
                 <span>صفحه اصلی</span>
               </NavLink>
             </li>
 
-            <li className="flex justify-start items-center font-IRanSans px-2 py-1.5">
-              <NavLink to="/" className="inline-flex gap-3">
-                <FaPalette className="text-xl" />
+            <li className="flex justify-start items-center font-IRanSans px-2 py-2">
+              <NavLink to="/products" className="inline-flex gap-3">
+                <FaPalette className="text-2xl" />
                 <span>تابلوها</span>
               </NavLink>
             </li>
-            <li className="flex justify-start items-center font-IRanSans px-2 py-1.5">
+            <li className="flex justify-start items-center font-IRanSans px-2 py-2">
               <NavLink to="/" className="inline-flex gap-3">
-                <FaReceipt className="text-xl" />
+                <FaReceipt className="text-2xl" />
                 <span>سفارش نقاشی</span>
               </NavLink>
             </li>
-            <li className="flex justify-start items-center font-IRanSans px-2 py-1.5">
+            <li className="flex justify-start items-center font-IRanSans px-2 py-2">
               <NavLink to="/" className="inline-flex gap-3">
-                <BsFillPersonBadgeFill className="text-xl" />
+                <BsFillPersonBadgeFill className="text-2xl" />
                 <span>هنرمندان</span>
               </NavLink>
             </li>
-            <li className="flex justify-start items-center font-IRanSans px-2 py-1.5">
+            <li className="flex justify-start items-center font-IRanSans px-2 py-2">
               <NavLink to="/" className="inline-flex gap-3">
-                <FaCircleInfo className="text-xl" />
+                <FaCircleInfo className="text-2xl" />
                 <span>درباره ما</span>
               </NavLink>
             </li>
-            <li className="flex justify-start items-center font-IRanSans px-2 py-1.5">
+            <li className="flex justify-start items-center font-IRanSans px-2 py-2">
               <NavLink to="/" className="inline-flex gap-3">
-                <FaPhoneVolume className="text-xl" />
+                <FaPhoneVolume className="text-2xl" />
                 <span>تماس با ما</span>
               </NavLink>
             </li>
