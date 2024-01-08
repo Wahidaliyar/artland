@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "./../assets/svgs/logo.svg";
+import logoBlack from './../assets/svgs/logo-black.svg'
 import { NavLink } from "react-router-dom";
 import {
   FaFacebook,
@@ -109,7 +110,7 @@ export default function Navbar() {
       <div
         className={`${
           mobileNavShow ? "" : "hidden"
-        } fixed top-0 bottom-0 flex-col bg-white h-full w-[75%] rounded-l-lg z-50 animate-[pull_0.3s_ease-in] md:hidden`}
+        } fixed top-0 bottom-0 flex-col bg-white h-full w-[78%] rounded-l-lg z-50 animate-[pull_0.3s_ease-in] md:hidden`}
       >
         <div className="bg-red-700 inline-block rounded-full p-0.5 mt-4 mr-4">
           <IoClose
@@ -118,7 +119,7 @@ export default function Navbar() {
           />
         </div>
         <div className="h-28 mt-6">
-          <img src={logo} alt="Logo" className="h-full w-full object-contain" />
+          <img src={logoBlack} alt="Logo" className="h-full w-full object-contain" />
         </div>
 
         {/* <div className="text-slate-800 mr-8">
@@ -162,7 +163,7 @@ export default function Navbar() {
         </a>
       </div> */}
 
-        <div className="text-xl mx-8 text-red-700 mt-8">
+        <div className="text-lg mx-8 text-red-700 mt-8">
           <ul>
             <li className="flex justify-start items-center font-IRanSans px-2 py-2">
               <NavLink to="/" className="flex gap-3">

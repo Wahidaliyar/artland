@@ -12,9 +12,9 @@ export default function Footer() {
   return (
     <section className="flex flex-col items-center bg-red-900/95 mt-12 text-white">
       <div className="mt-8">
-        <img src={logo} className="w-28 md:w-36" alt="" />
+        <img src={logo} className="w-36 md:w-44" alt="" />
       </div>
-      <h4 className="font-mehr text-2xl mt-6 md:text-4xl">
+      <h4 className="font-mehr text-3xl mt-6 md:text-4xl">
         گالری نقاشی سرزمین هنر
       </h4>
       <hr className="hidden md:block border-red-300 my-6 w-[25%] self-center" />
@@ -31,7 +31,7 @@ export default function Footer() {
           <li className="mt-2 md:mt-0">
             <NavLink
               className="hover:text-red-300 transition-all duration-300"
-              to="#"
+              to="/products"
             >
               فروشگاه
             </NavLink>
