@@ -9,7 +9,7 @@ export default function Hero() {
         <div className="absolute top-0 pt-10 h-full w-full">
           <div className="mt-44 md:mt-56 relative">
             <div
-              className="absolute hidden w-full transition-all duration-700"
+              className="absolute w-full transition-all duration-700"
             >
               <div
                 className="relative flex flex-col justify-center items-center w-full h-full text-center"
@@ -19,7 +19,7 @@ export default function Hero() {
                 >
                   سفارش
                   <span
-                    className="before:block text-white before:absolute before:-top-3 before:-bottom-3 before:-right-1 before:inset-2 before:-skew-x-12 before:bg-red-700 relative px-2"
+                    className="before:block text-white before:absolute before:-top-4 before:-bottom-6 before:-right-1 before:inset-2 before:-skew-x-12 before:bg-red-700 relative px-2"
                   >
                     <span className="relative">&nbsp;نقاشی&nbsp;</span>
                     <br className='md:hidden' />
@@ -40,7 +40,7 @@ export default function Hero() {
             </div>
 
             <div
-              className="absolute w-full transition-all duration-700"
+              className="absolute hidden w-full transition-all duration-700"
             >
               <div
                 className="relative flex flex-col justify-center items-center w-full h-full text-center"
@@ -52,7 +52,7 @@ export default function Hero() {
                   <br className="md:hidden" />
                   <span>تابلوی</span>
                   <span
-                    className="before:block text-white before:absolute before:-right-0.5 before:-left-0.5 before:-top-4 before:-bottom-2 before:inset-2 before:-skew-x-12 before:bg-red-700 relative px-2"
+                    className="before:block text-white before:absolute before:-right-0.5 before:-left-0.5 before:-top-6 before:-bottom-4 before:inset-2 before:-skew-x-12 before:bg-red-700 relative px-2"
                   >
                     <span className="relative">&nbsp;نقاشی</span>
                   </span>
