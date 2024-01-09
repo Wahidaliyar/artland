@@ -40,7 +40,7 @@ export default function Navbar() {
             محصولات
           </NavLink>
           <NavLink
-            href="./order.html"
+            to="/order"
             className="font-IRanSans text-white hover:text-red-200 transition-all duration-300 ease-in-out"
           >
             سفارش نقاشی
@@ -179,7 +179,7 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li className="flex justify-start items-center font-IRanSans px-2 py-2">
-              <NavLink to="/" className="inline-flex gap-3">
+              <NavLink to="/order" className="inline-flex gap-3">
                 <FaReceipt className="text-2xl" />
                 <span>سفارش نقاشی</span>
               </NavLink>
