@@ -19,7 +19,7 @@ export default function Hero() {
                 >
                   سفارش
                   <span
-                    className="before:block text-white before:absolute before:-top-4 before:-bottom-6 before:-right-1 before:inset-2 before:-skew-x-12 before:bg-red-700 relative px-2"
+                    className="before:block text-white before:absolute before:-top-6 before:-bottom-4 before:-right-1 before:inset-2 before:-skew-x-12 before:bg-red-700 relative px-2"
                   >
                     <span className="relative">&nbsp;نقاشی&nbsp;</span>
                     <br className='md:hidden' />
