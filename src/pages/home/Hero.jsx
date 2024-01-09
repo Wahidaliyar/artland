@@ -52,7 +52,7 @@ export default function Hero() {
                   <br className="md:hidden" />
                   <span>تابلوی</span>
                   <span
-                    className="before:block text-white before:absolute before:-right-0.5 before:-left-0.5 before:-top-4 before:-bottom-4 before:inset-2 before:-skew-x-12 before:bg-red-700 relative px-2"
+                    className="before:block text-white before:absolute before:-right-0.5 before:-left-0.5 before:-top-6 before:-bottom-4 before:inset-2 before:-skew-x-12 before:bg-red-700 relative px-2"
                   >
                     <span className="relative">&nbsp;نقاشی</span>
                   </span>
