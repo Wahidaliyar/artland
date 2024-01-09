@@ -19,7 +19,7 @@ export default function Hero() {
                 >
                   سفارش
                   <span
-                    className="before:block text-white before:absolute before:top-0 before:bottom-0 before:-right-1 before:inset-2 before:-skew-x-12 before:bg-red-700 relative px-2"
+                    className="before:block text-white before:absolute before:-top-3 before:-bottom-3 before:-right-1 before:inset-2 before:-skew-x-12 before:bg-red-700 relative px-2"
                   >
                     <span className="relative">&nbsp;نقاشی&nbsp;</span>
                     <br className='md:hidden' />
@@ -52,7 +52,7 @@ export default function Hero() {
                   <br className="md:hidden" />
                   <span>تابلوی</span>
                   <span
-                    className="before:block text-white before:absolute before:-right-0.5 before:-left-0.5 before:top-0 before:bottom-0 before:inset-2 before:-skew-x-12 before:bg-red-700 relative px-2"
+                    className="before:block text-white before:absolute before:-right-0.5 before:-left-0.5 before:-top-4 before:-bottom-4 before:inset-2 before:-skew-x-12 before:bg-red-700 relative px-2"
                   >
                     <span className="relative">&nbsp;نقاشی</span>
                   </span>
