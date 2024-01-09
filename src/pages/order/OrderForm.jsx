@@ -1,12 +1,11 @@
 import React from "react";
+import PageTitle from "../../components/PageTitle";
 
 export default function OrderForm() {
   return (
     <div>
       <section class="pt-24 md:pt-32 text-center">
-        <span className="before:block before:absolute before:top-0 before:bottom-0 before:-right-1 before:inset-2 before:-skew-x-12 before:bg-red-700 relative py-3 px-6 md:py-4 md:px-10">
-          <h1 class="inline-block text-2xl md:text-3xl text-white font-mehr relative">درخواست نقاشی</h1>
-        </span>
+        <PageTitle title="درخواست نقاشی" />
         <div class="text-justify px-6 mt-6 md:mt-10">
           <p class="font-IRanSans text-sm md:text-base md:w-[80%] leading-7 md:leading-8 md:mx-auto">
             برای ثبت سفارش نقاشی می‌توانید تصویر مدل مورد نظر را با کیفیت خوب و
