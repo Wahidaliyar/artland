@@ -4,10 +4,10 @@ import PageTitle from "../../components/PageTitle";
 export default function OrderForm() {
   return (
     <div>
-      <section class="pt-24 md:pt-32 text-center">
+      <section className="pt-24 md:pt-32 text-center">
         <PageTitle title="درخواست نقاشی" />
-        <div class="text-justify px-6 mt-6 md:mt-10">
-          <p class="font-IRanSans text-sm md:text-base md:w-[80%] leading-7 md:leading-8 md:mx-auto">
+        <div className="text-justify px-6 mt-6 md:mt-10">
+          <p className="font-IRanSans text-sm md:text-base md:w-[80%] leading-7 md:leading-8 md:mx-auto">
             برای ثبت سفارش نقاشی می‌توانید تصویر مدل مورد نظر را با کیفیت خوب و
             رنگی ضمینه کرده و از طریق فرم زیر جهت برآورد هزینه و ثبت سفارش برای
             ما ارسال نمایید. لازم به ذکر است بعد از برآورد هزینه و اعلام آن از
@@ -16,9 +16,15 @@ export default function OrderForm() {
             با هماهنگی قبلی و بسته بندی شده دریافت نمایید.
           </p>
 
-          <div class="w-full md:w-[50%] md:mx-auto bg-slate-300 shadow-lg rounded-sm px-4 md:px-10 pb-8 pt-3 mt-6 text-center">
-            <form action="" class="flex flex-col items-start text-slate-700 py-4 px-2 mt-4">
-              <label htmlFor="name" class="font-IRanSans md:font-semibold px-2">
+          <div className="w-full md:w-[50%] md:mx-auto bg-slate-200 shadow-lg rounded-sm px-4 md:px-10 pb-8 pt-3 mt-6 text-center">
+            <form
+              action=""
+              className="flex flex-col items-start text-slate-700 py-4 px-2 mt-4"
+            >
+              <label
+                htmlFor="name"
+                className="font-IRanSans md:font-semibold px-2"
+              >
                 نام
               </label>
               <input
@@ -26,12 +32,12 @@ export default function OrderForm() {
                 name="name"
                 id="name"
                 placeholder="علی"
-                class="w-full font-IRanSans placeholder:text-slate-500 px-2 py-1 outline-none rounded-sm mt-1"
+                className="w-full font-IRanSans placeholder:text-slate-500 px-2 py-1 outline-none rounded-sm mt-1"
               />
 
               <label
                 htmlFor="lastname"
-                class="font-IRanSans md:font-semibold px-2 mt-4"
+                className="font-IRanSans md:font-semibold px-2 mt-4"
               >
                 نام خانوادگی
               </label>
@@ -40,12 +46,12 @@ export default function OrderForm() {
                 name="lastname"
                 id="lastname"
                 placeholder="علوی"
-                class="w-full font-IRanSans placeholder:text-slate-500 px-2 py-1 outline-none rounded-sm mt-1"
+                className="w-full font-IRanSans placeholder:text-slate-500 px-2 py-1 outline-none rounded-sm mt-1"
               />
 
               <label
                 htmlFor="phonenumber"
-                class="font-IRanSans md:font-semibold px-2 mt-4"
+                className="font-IRanSans md:font-semibold px-2 mt-4"
               >
                 شماره تماس
               </label>
@@ -54,12 +60,12 @@ export default function OrderForm() {
                 name="phonenumber"
                 id="phonenumber"
                 placeholder="0773102910"
-                class="w-full ltr-div text-right font-IRanSans placeholder:text-slate-500 px-2 pt-[6px] pb-[3px] outline-none rounded-sm mt-1"
+                className="w-full ltr-div text-right font-IRanSans placeholder:text-slate-500 px-2 pt-[6px] pb-[3px] outline-none rounded-sm mt-1"
               />
 
               <label
                 htmlFor="email"
-                class="font-IRanSans md:font-semibold px-2 mt-4"
+                className="font-IRanSans md:font-semibold px-2 mt-4"
               >
                 آدرس ایمیل
               </label>
@@ -68,31 +74,31 @@ export default function OrderForm() {
                 name="email"
                 id="email"
                 placeholder="example@gmail.com"
-                class="w-full ltr-div text-right placeholder:text-slate-500 px-2 pt-1 pb-[6px] outline-none rounded-sm mt-1"
+                className="w-full ltr-div text-right placeholder:text-slate-500 px-2 pt-1 pb-[6px] outline-none rounded-sm mt-1"
               />
 
               <label
                 htmlFor="file"
-                class="font-IRanSans md:font-semibold px-2 mt-4"
+                className="font-IRanSans md:font-semibold px-2 mt-4"
               >
                 انتخاب فایل جهت بررسی
               </label>
               <label
                 for="file"
-                class="bg-red-700 w-full md:w-48 text-sm text-white py-3 rounded-sm cursor-pointer font-IRanSans mt-2"
+                className="bg-red-700 w-full md:w-48 text-sm text-white py-3 rounded-sm cursor-pointer font-IRanSans mt-2"
               >
                 انتخاب عکس
               </label>
-              <input type="file" name="file" id="file" class="hidden" />
+              <input type="file" name="file" id="file" className="hidden" />
 
               <label
                 htmlFor="height"
-                class="font-IRanSans md:font-semibold px-2 mt-4"
+                className="font-IRanSans md:font-semibold px-2 mt-4"
               >
                 ابعاد تابلو (طول)
               </label>
               <select
-                class="font-IRanSans bg-red-700 w-full md:w-48 text-sm text-white text-center py-2 outline-none rounded-sm mt-2 cursor-pointer"
+                className="font-IRanSans bg-red-700 w-full md:w-48 text-sm text-white text-center py-2 outline-none rounded-sm mt-2 cursor-pointer"
                 name="height"
                 id="height"
               >
@@ -109,12 +115,12 @@ export default function OrderForm() {
               </select>
               <label
                 htmlFor="width"
-                class="font-IRanSans md:font-semibold px-2 mt-4"
+                className="font-IRanSans md:font-semibold px-2 mt-4"
               >
                 ابعاد تابلو (عرض)
               </label>
               <select
-                class="font-IRanSans bg-red-700 w-full md:w-48 text-sm text-white text-center py-2 outline-none rounded-sm mt-2 cursor-pointer"
+                className="font-IRanSans bg-red-700 w-full md:w-48 text-sm text-white text-center py-2 outline-none rounded-sm mt-2 cursor-pointer"
                 name="width"
                 id="width"
               >
@@ -132,12 +138,12 @@ export default function OrderForm() {
 
               <label
                 htmlFor="tech"
-                class="font-IRanSans md:font-semibold px-2 mt-4"
+                className="font-IRanSans md:font-semibold px-2 mt-4"
               >
                 تکنیک
               </label>
               <select
-                class="font-IRanSans bg-red-700 w-full md:w-48 text-sm text-white text-center py-2 outline-none rounded-sm mt-2 cursor-pointer"
+                className="font-IRanSans bg-red-700 w-full md:w-48 text-sm text-white text-center py-2 outline-none rounded-sm mt-2 cursor-pointer"
                 name="tech"
                 id="tech"
               >
@@ -151,19 +157,18 @@ export default function OrderForm() {
                 <option value="60">نقطه‌چین</option>
               </select>
 
-              
               <textarea
                 name="description"
                 id="description"
                 cols="30"
                 rows="5"
                 placeholder="توضیحات"
-                class="w-full font-IRanSans text-sm placeholder:text-slate-500 px-2 pt-1 pb-[6px] outline-none rounded-sm mt-6"
+                className="w-full font-IRanSans text-sm placeholder:text-slate-500 px-2 pt-1 pb-[6px] outline-none rounded-sm mt-6"
               ></textarea>
 
               <button
                 type="submit"
-                class="font-IRanSans md:font-medium text-white self-center mt-8 py-2 px-8 bg-red-700 rounded-sm"
+                className="font-IRanSans md:font-medium text-white self-center mt-8 py-2 px-8 bg-red-700 rounded-sm"
               >
                 ثبت درخواست
               </button>
