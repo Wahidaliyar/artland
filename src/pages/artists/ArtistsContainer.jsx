@@ -15,7 +15,7 @@ import artist8 from './../../assets/images/artists/team-member-8.jpg'
 const data = [
     {
         id: '01',
-        name: 'محمد علی رضوی',
+        name: 'دیانا رضوی',
         image: artist1
     },
     {
@@ -30,7 +30,7 @@ const data = [
     },
     {
         id: '04',
-        name: 'پروانه قاسمی',
+        name: 'جواد حدید',
         image: artist4
     },
     {
@@ -40,7 +40,7 @@ const data = [
     },
     {
         id: '06',
-        name: 'شمس‌الله اکبری',
+        name: 'تمنا اکبری',
         image: artist6
     },
     {
