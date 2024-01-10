@@ -58,10 +58,10 @@ export default function Navbar() {
             درباره ما
           </NavLink>
           <NavLink
-            to="/"
+            to="/contact"
             className="font-IRanSans text-white hover:text-red-200 transition-all duration-300 ease-in-out"
           >
-            تماس باما
+            تماس با ما
           </NavLink>
         </div>
 
@@ -197,7 +197,7 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li className="flex justify-start items-center font-IRanSans px-2 py-2">
-              <NavLink to="/" className="inline-flex gap-3">
+              <NavLink to="/contact" className="inline-flex gap-3">
                 <FaPhoneVolume className="text-2xl" />
                 <span>تماس با ما</span>
               </NavLink>
