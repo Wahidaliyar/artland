@@ -46,7 +46,7 @@ export default function Navbar() {
             سفارش نقاشی
           </NavLink>
           <NavLink
-            to="/"
+            to="/artists"
             className="font-IRanSans text-white hover:text-red-200 transition-all duration-300 ease-in-out"
           >
             هنرمندان
@@ -185,7 +185,7 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li className="flex justify-start items-center font-IRanSans px-2 py-2">
-              <NavLink to="/" className="inline-flex gap-3">
+              <NavLink to="/artists" className="inline-flex gap-3">
                 <BsFillPersonBadgeFill className="text-2xl" />
                 <span>هنرمندان</span>
               </NavLink>

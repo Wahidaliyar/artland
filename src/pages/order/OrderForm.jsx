@@ -16,7 +16,7 @@ export default function OrderForm() {
             با هماهنگی قبلی و بسته بندی شده دریافت نمایید.
           </p>
 
-          <div class="w-full md:w-[50%] md:mx-auto bg-slate-300 shadow-lg rounded-sm px-4 md:px-10 pb-8 pt-3 mt-6 text-center">
+          <div class="w-full md:w-[50%] md:mx-auto bg-slate-200 shadow-lg rounded-sm px-4 md:px-10 pb-8 pt-3 mt-6 text-center">
             <form action="" class="flex flex-col items-start text-slate-700 py-4 px-2 mt-4">
               <label htmlFor="name" class="font-IRanSans md:font-semibold px-2">
                 نام
