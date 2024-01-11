@@ -5,7 +5,7 @@ export default function AboutContainer() {
     <section className="pt-16 md:pt-36">
       <div className="w-[85%] md:w-[65%] mx-auto">
         <div className="flex flex-col-reverse md:flex-row justify-between">
-          <p className="font-IRanSans mt-3 md:mt-0 text-lg md:text-2xl font-bold text-red">
+          <p className="font-mehr mt-3 md:mt-0 text-xl md:text-3xl text-red-700">
             به گالری سرزمین هنر خوش آمدید!
           </p>
           <div className="text-3xl text-slate-700">
