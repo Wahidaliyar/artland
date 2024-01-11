@@ -52,7 +52,7 @@ export default function Navbar() {
             هنرمندان
           </NavLink>
           <NavLink
-            to="/"
+            to="/about"
             className="font-IRanSans text-white hover:text-red-200 transition-all duration-300 ease-in-out"
           >
             درباره ما
@@ -191,7 +191,7 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li className="flex justify-start items-center font-IRanSans px-2 py-2">
-              <NavLink to="/" className="inline-flex gap-3">
+              <NavLink to="/about" className="inline-flex gap-3">
                 <FaCircleInfo className="text-2xl" />
                 <span>درباره ما</span>
               </NavLink>
