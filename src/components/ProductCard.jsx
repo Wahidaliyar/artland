@@ -1,9 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import {motion, useScroll, useTransform} from 'framer-motion'
 
 export default function ProductCard({ id, name, image, technique, price }) {
+
+  const {scrollYProgress} = useScroll()
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [0, 1])
+  const translateY = useTransform(scrollYProgress, [0, 1], [100, 0])
+
+
   return (
-    <div className="mx-auto w-full p-3 rounded-sm mt-4 bg-white hover:scale-105 transition-all duration-200 shadow-md">
+    <motion.div className="mx-auto w-full p-3 rounded-sm mt-4 bg-white hover:scale-105 transition-all duration-200 shadow-md"
+    >
       <div className="relative group">
         <img
           src={image}
@@ -28,6 +36,6 @@ export default function ProductCard({ id, name, image, technique, price }) {
       <p className="font-IRanSans text-left text-red text-sm md:text-base">
         <span className="text-red-700 font-bold">{price}</span> افغانی
       </p>
-    </div>
+    </motion.div>
   );
 }

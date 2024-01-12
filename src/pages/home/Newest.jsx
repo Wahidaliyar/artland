@@ -72,6 +72,7 @@ const data = [
 ];
 
 export default function Newest() {
+
   return (
     <section className="text-center mt-20 md:mt-32 pb-10">
       <PageTitle title="جدیدترین‌ها" />
