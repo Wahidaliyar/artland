@@ -5,6 +5,7 @@ import Order from "./pages/order/Order";
 import Artists from "./pages/artists/Artists";
 import Contact from "./pages/contact/Contact";
 import About from "./pages/about/About";
+import SingleArtist from "./pages/artists/SingleArtist";
 
 function App() {
   return (
@@ -13,7 +14,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/order" element={<Order />} />
-        <Route path="/artists" element={<Artists />} />
+        <Route path="/artists">
+          <Route index element={<Artists />} />
+          <Route path="/:id" element={<SingleArtist />} />
+        </Route>
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
       </Routes>
